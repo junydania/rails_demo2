@@ -76,3 +76,121 @@ Processing by LandingController#index as HTML
   Rendered landing/index.html.erb within layouts/application (26.1ms)
 Completed 200 OK in 299ms (Views: 281.6ms | ActiveRecord: 0.5ms)
   [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (9.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at", "author") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "A breaking news item"], ["content", "Some really breaking action"], ["created_at", "2017-05-08 11:18:39.320849"], ["updated_at", "2017-05-08 11:18:39.320849"], ["author", "Thomas"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at", "author") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Learn Rails 5"], ["content", "Build awesome rails applications"], ["created_at", "2017-05-08 11:18:39.324379"], ["updated_at", "2017-05-08 11:18:39.324379"], ["author", "Amber"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2017-05-08 13:18:39 +0200
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  [1m[36mArticle Load (12.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered landing/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 947ms (Views: 831.2ms | ActiveRecord: 12.6ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (26.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "MyString"], ["content", "MyText"], ["created_at", "2017-05-08 11:19:31.677920"], ["updated_at", "2017-05-08 11:19:31.677920"]]
+  [1m[35m (5.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (16.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "MyString"], ["content", "MyText"], ["created_at", "2017-05-08 11:22:58.135529"], ["updated_at", "2017-05-08 11:22:58.135529"]]
+  [1m[35m (3.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (34.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "MyString"], ["content", "MyText"], ["created_at", "2017-05-08 11:27:59.692961"], ["updated_at", "2017-05-08 11:27:59.692961"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (40.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at", "author") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "A breaking news item"], ["content", "Some really breaking action"], ["created_at", "2017-05-08 11:50:06.869764"], ["updated_at", "2017-05-08 11:50:06.869764"], ["author", "Thomas"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at", "author") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Learn Rails 5"], ["content", "Build awesome rails applications"], ["created_at", "2017-05-08 11:50:06.878421"], ["updated_at", "2017-05-08 11:50:06.878421"], ["author", "Amber"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2017-05-08 13:50:06 +0200
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered landing/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 314ms (Views: 301.7ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (27.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.7ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at", "author") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "A breaking news item"], ["content", "Some really breaking action"], ["created_at", "2017-05-08 12:04:38.928024"], ["updated_at", "2017-05-08 12:04:38.928024"], ["author", "Thomas"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at", "author") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Learn Rails 5"], ["content", "Build awesome rails applications"], ["created_at", "2017-05-08 12:04:38.939387"], ["updated_at", "2017-05-08 12:04:38.939387"], ["author", "Amber"]]
+  [1m[35m (5.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2017-05-08 14:04:38 +0200
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered landing/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 396ms (Views: 375.1ms | ActiveRecord: 1.5ms)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (7.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at", "author") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "A breaking news item"], ["content", "Some really breaking action"], ["created_at", "2017-05-08 12:05:43.212488"], ["updated_at", "2017-05-08 12:05:43.212488"], ["author", "Thomas"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at", "author") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Learn Rails 5"], ["content", "Build awesome rails applications"], ["created_at", "2017-05-08 12:05:43.222090"], ["updated_at", "2017-05-08 12:05:43.222090"], ["author", "Amber"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2017-05-08 14:05:43 +0200
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  [1m[36mArticle Load (7.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered landing/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 450ms (Views: 430.9ms | ActiveRecord: 7.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
